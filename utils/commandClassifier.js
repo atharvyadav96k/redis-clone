@@ -3,7 +3,7 @@ exports.isStringOperation = (val) => {
   const operationList = [
     "SET", "GET", "DEL", "GETRANGE", "GETSET", "MGET", "GETBIT", "SETBIT",
     "SETEX", "SETNX", "SETRANGE", "STRLEN", "MSET", "MSETNX", "PSETEX",
-    "INCR", "INCRBY", "DECR", "DECRBY", "APPEND"
+    "INCR", "INCRBY", "DECR", "DECRBY", "APPEND", "INCRBYFLOAT"
   ];
   return operationList.includes(val);
 };
