@@ -1,12 +1,11 @@
 const net = require("net");
-const filterData = require("./inputParser");
+const dataBaseOperation = require("./utils/databaseOperation");
 
 const server = net.createServer(connection =>{
     console.log("Client connected");
     connection.write("clear\n")
     connection.on('data', (data)=>{
-        console.log(filterData(data));
-        connection.write("+OK\r\n")
+        dataBaseOperation(data, connection);
     })
 });
 
