@@ -19,10 +19,10 @@ It’s built to understand how Redis works internally and how to manage efficien
 
 ## 🛠 Tech Stack
 
-- **Language:** Node.js / Python / Go (choose the one you're using)
+- **Language:** Node.js
 - **Data Storage:** In-memory (no persistent DB)
 - **Architecture:** Event-loop based request handling
-- **Communication Protocol:** Custom (or Redis-like RESP if implemented)
+- **Communication Protocol:** TCP
 
 ---
 
@@ -31,5 +31,5 @@ It’s built to understand how Redis works internally and how to manage efficien
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/redis-clone.git
+git clone https://github.com/atharvyadav96k/redis-clone.git
 cd redis-clone
