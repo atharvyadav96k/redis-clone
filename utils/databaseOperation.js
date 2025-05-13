@@ -22,7 +22,7 @@ module.exports = (command, response) => {
 
     if (cmd === "PING") {
 
-        response.write("PONG\n");
+        response.write("+PONG\r\n");
 
     } else if(cmd === "EXIT"){
         response.end();
