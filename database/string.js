@@ -6,7 +6,7 @@ class String {
         this.expTime = exp;
         this.length = typeof (data) === "string" ? data.length : 0;
     }
-
+    
     get() {
         return this.data;
     }
